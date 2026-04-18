@@ -1,8 +1,8 @@
 // Define a function named sumAllNumbers that takes any number of parameters and returns their sum.
 // Use a rest parameter to handle an arbitrary number of input numbers.
 
-const sumAllNumbers = () => {
-  //Code here
+const sumAllNumbers = (...numbers: number[]): number => {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
 };
 
 // Test cases:
